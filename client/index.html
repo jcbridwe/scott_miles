@@ -1,450 +1,832 @@
 <!DOCTYPE html>
-<html class="cspio">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<!---
-	Welcome to our free coming soon page template by http://comingsoonpage.com Get your free download at https://www.seedprod.com/free-coming-soon-page/
-	This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
-	http://creativecommons.org/licenses/by-nc-nd/4.0/
 
-	To get started follow this checklist.
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Scott Miller 4 CW</title>
+	<meta name="description" content="Campaign site for Scott Miller">
+	<meta name="author" content="Justin Bridwell">
 
-	1. Replace the *Page Title* on lines 23, 31 & 296
-	2. Set the *Page Description* on lines 26, 32 & 298
-	3. Set an optional *Logo* on lines 294 using the src attribute.
-	4. Set your *Facebook Profile* URL on line 312 using the href attribute.
-	5. Set your *Twitter Profile* URL on line 313 using the href attribute.
-	6. Set your *Email* on line 314 using the href attribute.
-	7. Set your background image on line 63, see file README.mb for additional background images.
-	8. Set your MailChimp email post URL on line 300 See video: https://youtu.be/YUdP1qfMot8
-	9. FTP to your Website. 
-	-->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Coming Soon Page</title>
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta name="generator" content="comingsoonpage.com 1.0.0" />
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="https://static.comingsoonpage.com/cspio-assets/1.0.0/favicon.ico">
-	<meta property="og:url" content="" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="My Coming Soon Page" />
-	<meta property="og:description" content="" />
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/custom.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
 	
-	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-
-	<!-- Bootstrap and default Style -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-	<link rel="stylesheet" href="https://static.comingsoonpage.com/cspio-assets/1.0.0/style.css">
-
-	<!-- Google Fonts -->
-	<link class="gf-headline" href='https://fonts.googleapis.com/css?family=Pacifico:400&subset=' rel='stylesheet' type='text/css'>
-			
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
-	
-	<!-- Calculated Styles -->
-	<style type="text/css">
-	
-	html {
-		height: 100%;
-		overflow: hidden;
-	}
-
-	body {
-		height:100%;
-		overflow: auto;
-		-webkit-overflow-scrolling: touch;
-	}
-	
-	html{
-		height:100%;
-	  background: #ffffff url(http://www.chesterfield.gov/uploadedImages/Department_Information/Constitutional_Offices/Circuit_Court_Clerk/Media/Images/Courts-Building.jpg); no-repeat center bottom fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-
-	#cspio-page{
-		background-color: rgba(0,0,0,0);
-	}
-	
-	.flexbox #cspio-page{
-		align-items: center;
-		justify-content: center;
-	}
-
-	.cspio body{
-		background: transparent;
-	}
-
-	.cspio body, .cspio body p{
-        font-family: Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		font-style: ;
-        font-size: 20px;
-        line-height: 1.50em;
-        color:#ffffff;
-    }
-
-	::-webkit-input-placeholder {
-		font-family:Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		font-style: ;
-	}
-
-	::-moz-placeholder {
-		font-family:Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		font-style: ;
-	} 
-
-	:-ms-input-placeholder {
-		font-family:Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		font-style: ;
-	}
-
-	:-moz-placeholder {
-		font-family:Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		font-style: ;
-	}
-
-    .cspio h1, .cspio h2, .cspio h3, .cspio h4, .cspio h5, .cspio h6{
-        font-family: 'Pacifico';
-        color:#ffffff;
-    }
-
-	#cspio-headline{
-		font-family: 'Pacifico';
-		font-weight: 400;
-		font-style: ;
-				font-size: 48px;
-		color:#ffffff;
-		line-height: 1.00em;
-	}
-
-	.cspio button{
-        font-family: Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		font-style: ;
-    }
-	
-    .cspio a, .cspio a:visited, .cspio a:hover, .cspio a:active{
-		color: #ffffff;
-	}
-
-	#cspio-socialprofiles a {
-	  color: #ffffff;
-	}
-	.cspio .btn-primary,
-	.cspio .btn-primary:focus,
-	.gform_button,
-	#mc-embedded-subscribe, .submit-button {
-		color: black;
-		text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
-		background-color: #ffffff;
-		background-image: -moz-linear-gradient(top,#ffffff,#d9d9d9);
-		background-image: -ms-linear-gradient(top,#ffffff,#d9d9d9);
-		background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#d9d9d9));
-		background-image: -webkit-linear-gradient(top,#ffffff,#d9d9d9);
-		background-image: -o-linear-gradient(top,#ffffff,#d9d9d9);
-		background-image: linear-gradient(top,#ffffff,#d9d9d9);
-		background-repeat: repeat-x;
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d9d9d9', GradientType=0);
-		border-color: #d9d9d9 #d9d9d9 #b3b3b3;
-		border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-		*background-color: #d9d9d9;
-		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-	}
-
-	.cspio .btn-primary:hover,
-	.cspio .btn-primary:active,
-	.cspio .btn-primary.active,
-	.cspio .btn-primary.disabled,
-	.cspio .btn-primary[disabled],
-	.cspio .btn-primary:focus:hover,
-	.cspio .btn-primary:focus:active,
-	.cspio .btn-primary:focus.active,
-	.cspio .btn-primary:focus.disabled,
-	.cspio .btn-primary:focus[disabled],
-	#mc-embedded-subscribe:hover,
-	#mc-embedded-subscribe:active,
-	#mc-embedded-subscribe.active,
-	#mc-embedded-subscribe.disabled,
-	#mc-embedded-subscribe[disabled] {
-		background-color: #d9d9d9;
-		*background-color: #cccccc;
-	}
-
-	.cspio .btn-primary:active,
-	.cspio .btn-primary.active,
-	.cspio .btn-primary:focus:active,
-	.cspio .btn-primary:focus.active,
-	.gform_button:active,
-	.gform_button.active,
-	#mc-embedded-subscribe:active,
-	#mc-embedded-subscribe.active {
-		background-color: #bfbfbf;
-	}
-
-	.form-control,
-	.progress {
-		background-color: rgba(255, 255, 255, 0.85);
-	}
-
-	#cspio-progressbar span,
-	.countdown_section {
-		color: black;
-		text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
-	}
-
-	.cspio .btn-primary:hover,
-	.cspio .btn-primary:active {
-		color: black;
-		text-shadow: 0 -1px 0 rgba(255,255,255,0.3);
-		border-color: #e6e6e6;
-	}
-
-	.cspio input[type='text']:focus {
-		webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
-		-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
-		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(217,217,217,0.6);
-	}
-    
-    #cspio-content {
-		display: none;
-		max-width: 600px;
-		background-color: #000000;
-		-webkit-border-radius: 2px;
-		border-radius: 2px;
-		-moz-background-clip: padding;
-		-webkit-background-clip: padding-box;
-		background-clip: padding-box;
-		background-color:transparent;
-	}
-    
-	.cspio .progress-bar,
-	.countdown_section,
-	.cspio .btn-primary,
-	.cspio .btn-primary:focus,
-	.gform_button {
-		background-image: none;
-		text-shadow: none;
-	}
-
-	.cspio input,
-	.cspio input:focus {
-		-webkit-box-shadow: none !important;
-		box-shadow: none !important;
-	}
-							
-	#cspio-page{
-	    background: -moz-radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.2) 37%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%);
-	    background: -webkit-radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.2) 37%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%);
-	    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.2) 37%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%);
-	}
-
-	.cspio body{
-		background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 7%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.23) 100%); 
-		background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 7%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.23) 100%); 
-		background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 7%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.23) 100%); 
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#3b000000',GradientType=1 ); 
-	}
-
-	#cspio-subscribe-btn{
-	    background:transparent;
-	    border: 1px solid #fff !important;
-	    color: #fff;
-	}
-
-	#cspio-subscribe-btn:hover{
-	    background: rgba(255,255,255,0.2);
-	    color: #fff;
-	}
-
-	#cspio-credit img{
-		margin-left:auto;
-		margin-right:auto;
-		width:125px;
-		    margin-top: -4px;
-	}
-
-	#cspio-credit {
-		font-size:11px;
-	}
-
+	<style>
+   	#contact button.submitnew {
+   	text-transform: uppercase;
+   	letter-spacing: 3px;
+   	color:#fff;
+      background: #0D0D0D;
+   	border: none;
+      cursor: pointer;
+      height: auto;
+      display: inline-block;
+   	border-radius: 3px;
+      margin-left: 26%;
+      }
+      #contact button.submitnew:hover {
+      	color: #0D0D0D;
+      	background: #fff;
+      }
 	</style>
 
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-	<!-- Modernizr -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	
-	<!-- Google Analytics Code Goes Here-->
 </head>
+
 <body>
-	<div id="cspio-page">
-		<div id="cspio-content">
-			
-			<!--<img id="cspio-logo" src="https://static.comingsoonpage.com/cspio-assets/1.0.0/seedprod-logo-white.png">-->
-			    				
-			<h1 id="cspio-headline">Coming Soon</h1>			    				
-			
-			<div id="cspio-description">Scott Miles for Commonwealth Attorney. Get ready Chesterfield County!</div>			    				
-			
-			<form id="cspio-form" action="" method="post">
-				<div id="cspio-field-wrapper">
-					<div class="row">
-						<div class="col-md-12 seperate"><div class="input-group"><input id="cspio-email" name="EMAIL" class="form-control input-lg form-el" type="email" placeholder="Email" required/>
-					<span class="input-group-btn"><button id="cspio-subscribe-btn" type="submit" class="btn btn-lg btn-primary form-el noglow">Notify Me</button></span></div></div>
-					</div>
-				</div>
-			</form>
-			
-			<span id="cspio-privacy-policy-txt">Chesterfield County, VA</span>
-			    						    			    								    			    			    				
-			<!--<div id="cspio-socialprofiles">-->
-			<!--	<a href="" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>			-->
-			<!--	<a href="" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>			-->
-			<!--	<a href="mailto:" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>			-->
-			<!--</div>-->
 
-			<!--<div id="cspio-credit">-->
-			<!--		<span>Created with <a target="_blank" href="https://www.comingsoonpage.com"><img id="aff" src="https://static.comingsoonpage.com/cspio-assets/1.0.0/comingsoonpage.com-logo.png" alt="Created by ComingSoonPage.com"></a> Free download <a target="_blank" href="http://www.seedprod.com/free-coming-soon-page/" style="text-decoration:underline" alt="Get your free coming soon page.">here.</a>-->
-			<!--	</span></div>-->
-									    									    			    			    							    			     			    		
-		</div><!-- end of #cspio-content -->
-	</div>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">Bio</a></li>
+	         <li><a class="smoothscroll" href="#resume">Background</a></li>
+          <!--  <li><a class="smoothscroll" href="#portfolio">Works</a></li>-->
+            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Scott Miles for Commonwealth Attorney</h1>
+            <h3>I'm running for the office of  <span>Commonwealth Attorney for Chesterfield County, VA </span>. If you want professional and dependable representation in our district court,
+            I would appreciate you casting your ballot for me on <span>November 7th</span>. Don't forget to <span><a href="https://www.virginia.gov/services/register-to-vote/" target="_blank">register</a></span> to vote. <a class="smoothscroll" href="#about">Start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+               <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <!--<li><a href="https://www.skype.com/en/"><i class="fa fa-skype"></i></a></li>-->
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
 
 
-	<script>
-		// Animate Delay
-		setTimeout(function(){ jQuery("#cspio-content").show().addClass('animated fadeIn'); }, 250);
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
-		// Reseize	
-		function resize(){
-				$('head').append("<style id='form-style' type='text/css'></style>");
-				$('#form-style').html('.cspio .input-group-btn, .cspio .input-group{display:block;width:100%;}.cspio #cspio-subscribe-btn{margin-left:0;width:100%;display:block;}.cspio .input-group .form-control:first-child, .cspio .input-group-addon:first-child, .cspio .input-group-btn:first-child>.btn, .cspio .input-group-btn:first-child>.dropdown-toggle, .cspio .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {border-bottom-right-radius: 4px;border-top-right-radius: 4px;}.cspio .input-group .form-control:last-child, .cspio .input-group-addon:last-child, .cspio .input-group-btn:last-child>.btn, .cspio .input-group-btn:last-child>.dropdown-toggle, .cspio .input-group-btn:first-child>.btn:not(:first-child) {border-bottom-left-radius: 4px;border-top-left-radius: 4px;}');
-		}
-		
-		$('#cspio-content').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
-			function(){
-				var width = $('#cspio-field-wrapper').width();
-				if(width < 480 && width != 0){
-					resize();
-				}
-			}
-		);
-	</script>
+      <div class="row">
 
-	</body>
+         <div class="three columns">
+
+            <img class="profile-pic"  src="img/profile-pic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Bio</h2>
+
+            <p>Scott Miles has been a Virginia Lawyer for the past 22 years, serving as a legal aid staff attorney, then public defender, 
+            then prosecutor, and now private practitioner.  He grew up on a beef cattle farm in Albemarle County, went to William & Mary on an 
+            ROTC Scholarship, and served as an Army Officer in the Persian Gulf War and Somalia before attending law school.  He lives with his wife, 
+            two children, two dogs, and six goats on Belmont Road in Chesterfield County.  He works out of his office on Iron Bridge Road, and regularly 
+            appears in Chesterfield County Courts.  
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Scott Miles 4 CW</span><br>
+						   <span>xxxx<br>
+						         Richmond, VA
+                     </span><br>
+						   <span>804-307-6628</span><br>
+                     <span>scottmiles4cw@gmail.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="https://www.virginia.gov/services/register-to-vote/" class="button"><i class="fa fa-check"></i>Register to Vote</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>University of Virginia School of </h3>
+                  <p class="info">Juris Doctor <span>&bull;</span> <em class="date">1996</em></p>
+               
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>College of William & Mary</h3>
+                  <p class="info">Batchelor of Arts - Philosophy and Military Science <span>&bull;</span> <em class="date">1990</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+          <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <!--<div class="row work">-->
+
+      <!--   <div class="three columns header-col">-->
+      <!--      <h1><span>Work</span></h1>-->
+      <!--   </div>-->
+
+      <!--   <div class="nine columns main-col">-->
+
+      <!--      <div class="row item">-->
+
+      <!--         <div class="twelve columns">-->
+
+      <!--            <h3>Lumos Networks</h3>-->
+      <!--            <p class="info">GIS Analyst/High Level Estimator <span>&bull;</span> <em class="date">April 2018 - Present</em></p>-->
+
+      <!--            <p>-->
+      <!--            Perform geospatial analysis to determine appropriate fiber optics sites for potential clients. Using this analysis,-->
+      <!--            produce cost estimate report and cartographic products for sales engineers and technicians. -->
+      <!--            </p>-->
+      <!--         </div>-->
+
+      <!--      </div> <!-- item end -->-->
+
+      <!--      <div class="row item">-->
+
+      <!--         <div class="twelve columns">-->
+
+      <!--            <h3>Tellus Agronomics</h3>-->
+      <!--            <p class="info">GIS Manager <span>&bull;</span> <em class="date">January - April 2018</em></p>-->
+
+      <!--            <p>-->
+      <!--            Managed geospatial analysis processes with a focus on improvement, innovation, and value-added production. -->
+      <!--            Created Python scripts and model tools to streamline workflow. Developed web applications for field use with -->
+      <!--            Web AppBuilder (Developer’s Edition) and ArcCollector. Leveraged ArcGIS Online to serve web applications and -->
+      <!--            create cartographic products. Worked directly with partners and clients to create agronomic analysis products -->
+      <!--            for variable rate planting and fertilizer prescriptions. -->
+      <!--            </p>-->
+      <!--         </div>-->
+
+      <!--      </div> <!-- item end -->-->
+            
+      <!--      <div class="row item">-->
+
+      <!--         <div class="twelve columns">-->
+
+      <!--            <h3>Hexagon US Federal/Intergraph</h3>-->
+      <!--            <p class="info">GIS Applications Engineer <span>&bull;</span> <em class="date">February 2016 - January 2018</em></p>-->
+
+      <!--            <p>-->
+      <!--            Planned, designed, developed, maintained, and improved web-based geospatial software solutions for commercial and government clients. -->
+      <!--            Development based on customer requirements in collaboration with project managers and engineering team using the SCRUM/Agile process. -->
+      <!--            Write code for initial development and system improvements. Perform manual testing of APIs and product throughout development and maintenance -->
+      <!--            process. Write code for automated testing commands. Identify bugs and regression issues and recommend improvements in UX.-->
+      <!--            </p>-->
+      <!--         </div>-->
+
+      <!--      </div> <!-- item end -->-->
+            
+      <!--      <div class="row item">-->
+
+      <!--         <div class="twelve columns">-->
+
+      <!--            <h3>IBM</h3>-->
+      <!--            <p class="info">Asset Management Software Analyst <span>&bull;</span> <em class="date">March 2013 - January 2016</em></p>-->
+
+      <!--            <p>-->
+      <!--            Analyzed asset management data for multiple public and private accounts. Worked with internal and external customers supporting -->
+      <!--            IBM asset management tools. Managed asset scan information using database tools. Resolve asset scan problems for customers. -->
+      <!--            Coordinated with global software team to update asset management data. Developed procedural workflows for scanning on new accounts. -->
+      <!--            Update metrics database. Trained new asset management personnel.-->
+      <!--            </p>-->
+      <!--         </div>-->
+
+      <!--      </div> <!-- item end -->-->
+
+      <!--   </div> <!-- main-col end -->-->
+
+      <!--</div> <!-- End Work -->-->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+   <!--   <div class="row skill">-->
+
+   <!--      <div class="three columns header-col">-->
+   <!--         <h1><span>Skills</span></h1>-->
+   <!--      </div>-->
+
+   <!--      <div class="nine columns main-col">-->
+
+   <!--         <p>These are some of my core skills related to GIS and web applications development:-->
+   <!--         </p>-->
+
+			<!--	<div class="bars">-->
+
+			<!--	   <ul class="skills">-->
+			<!--		   <li><span class="bar-expand photoshop"></span><em>Javascript</em></li>-->
+   <!--               <li><span class="bar-expand illustrator"></span><em>Python</em></li>-->
+			<!--			<li><span class="bar-expand wordpress"></span><em>NodeJS/JS Frameworks</em></li>-->
+			<!--			<li><span class="bar-expand css"></span><em>HTML5/CSS/SCSS</em></li>-->
+			<!--			<li><span class="bar-expand html5"></span><em>Ruby/Rails</em></li>-->
+   <!--               <li><span class="bar-expand jquery"></span><em>Mods and Libs</em></li>-->
+   <!--               <li><span class="bar-expand jquery"></span><em>Geospatial Analysis</em></li>-->
+   <!--               <li><span class="bar-expand jquery"></span><em>Postgres SQL/MySQL</em></li>-->
+			<!--		</ul>-->
+
+			<!--	</div><!-- end skill-bars -->-->
+
+			<!--</div> <!-- main-col end -->-->
+
+   <!--   </div> <!-- End skills -->-->
+
+   <!--</section> <!-- Resume Section End-->-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <!--<section id="portfolio">-->
+
+   <!--   <div class="row">-->
+
+   <!--      <div class="twelve columns collapsed">-->
+
+   <!--         <h1>Check Out Some of My Projects.</h1>-->
+
+            <!-- portfolio-wrapper -->
+   <!--         <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">-->
+
+   <!--       	   <div class="columns portfolio-item">-->
+   <!--               <div class="item-wrap">-->
+
+   <!--                  <a href="#modal-01" title="DTR Guide App">-->
+   <!--                     <img alt="" src="img/portfolio/raleigh-north.jpg">-->
+   <!--                     <div class="overlay">-->
+   <!--                        <div class="portfolio-item-meta">-->
+   <!--       					      <h5>Downtown Raleigh Guide</h5>-->
+   <!--                           <p>Web Mapping App</p>-->
+   <!--       					   </div>-->
+   <!--                     </div>-->
+   <!--                     <div class="link-icon"><i class="icon-plus"></i></div>-->
+   <!--                  </a>-->
+
+   <!--               </div>-->
+   <!--       		</div> <!-- item end -->-->
+
+   <!--            <div class="columns portfolio-item">-->
+   <!--               <div class="item-wrap">-->
+
+   <!--                  <a href="#modal-02" title="Barbershop Website">-->
+   <!--                     <img alt="" src="img/portfolio/barbershop.jpg">-->
+   <!--                     <div class="overlay">-->
+   <!--                        <div class="portfolio-item-meta">-->
+   <!--       					      <h5>Barbershop</h5>-->
+   <!--                           <p>Website</p>-->
+   <!--       					   </div>-->
+   <!--                     </div>-->
+   <!--                     <div class="link-icon"><i class="icon-plus"></i></div>-->
+   <!--                  </a>-->
+
+   <!--               </div>-->
+   <!--       		</div> <!-- item end -->-->
+
+   <!--            <div class="columns portfolio-item">-->
+   <!--               <div class="item-wrap">-->
+
+   <!--                  <a href="#modal-03" title="GIS Portfolio">-->
+   <!--                     <img alt="" src="img/portfolio/map.png">-->
+   <!--                     <div class="overlay">-->
+   <!--                        <div class="portfolio-item-meta">-->
+   <!--       					      <h5>GIS Analysis</h5>-->
+   <!--                           <p>GIS Porfolio</p>-->
+   <!--       					   </div>-->
+   <!--                     </div>-->
+   <!--                     <div class="link-icon"><i class="icon-plus"></i></div>-->
+   <!--                  </a>-->
+
+   <!--               </div>-->
+   <!--       		</div> <!-- item end -->-->
+
+   <!--            <div class="columns portfolio-item">-->
+   <!--               <div class="item-wrap">-->
+
+   <!--                  <a href="#modal-04" title="Nythrwyrld">-->
+   <!--                     <img alt="" src="img/portfolio/cemetary.jpg">-->
+   <!--                     <div class="overlay">-->
+   <!--                        <div class="portfolio-item-meta">-->
+   <!--       					      <h5>Nythrwyrld</h5>-->
+   <!--                           <p>Paranormal Investigation</p>-->
+   <!--       					   </div>-->
+   <!--                     </div>-->
+   <!--                     <div class="link-icon"><i class="icon-plus"></i></div>-->
+   <!--                  </a>-->
+
+   <!--               </div>-->
+   <!--       		</div> <!-- item end -->-->
+
+            <!--   <div class="columns portfolio-item">-->
+            <!--      <div class="item-wrap">-->
+
+            <!--         <a href="#modal-05" title="">-->
+            <!--            <img alt="" src="img/portfolio/farmerboy.jpg">-->
+            <!--            <div class="overlay">-->
+            <!--               <div class="portfolio-item-meta">-->
+          		<!--			      <h5>Farmer Boy</h5>-->
+            <!--                  <p>Branding</p>-->
+          		<!--			   </div>-->
+            <!--            </div>-->
+            <!--            <div class="link-icon"><i class="icon-plus"></i></div>-->
+            <!--         </a>-->
+
+            <!--      </div>-->
+          		<!--</div> <!-- item end -->
+
+            <!--   <div class="columns portfolio-item">-->
+            <!--      <div class="item-wrap">-->
+
+            <!--         <a href="#modal-06" title="">-->
+            <!--            <img alt="" src="img/portfolio/girl.jpg">-->
+            <!--            <div class="overlay">-->
+            <!--               <div class="portfolio-item-meta">-->
+          		<!--			      <h5>Girl</h5>-->
+            <!--                  <p>Photography</p>-->
+          		<!--			   </div>-->
+            <!--            </div>-->
+            <!--            <div class="link-icon"><i class="icon-plus"></i></div>-->
+            <!--         </a>-->
+
+            <!--      </div>-->
+          		<!--</div> <!-- item end -->
+
+            <!--   <div class="columns portfolio-item">-->
+            <!--      <div class="item-wrap">-->
+
+            <!--         <a href="#modal-07" title="">-->
+            <!--            <img alt="" src="img/portfolio/origami.jpg">-->
+            <!--            <div class="overlay">-->
+            <!--               <div class="portfolio-item-meta">-->
+          		<!--			      <h5>Origami</h5>-->
+            <!--                  <p>Illustrration</p>-->
+          		<!--			   </div>-->
+            <!--            </div>-->
+            <!--            <div class="link-icon"><i class="icon-plus"></i></div>-->
+            <!--         </a>-->
+
+            <!--      </div>-->
+          		<!--</div> <!-- item end -->
+
+            <!--   <div class="columns portfolio-item">-->
+            <!--      <div class="item-wrap">-->
+
+            <!--         <a href="#modal-08" title="">-->
+            <!--            <img alt="" src="img/portfolio/retrocam.jpg">-->
+            <!--            <div class="overlay">-->
+            <!--               <div class="portfolio-item-meta">-->
+          		<!--			      <h5>Retrocam</h5>-->
+            <!--                  <p>Web Development</p>-->
+          		<!--			   </div>-->
+            <!--            </div>-->
+            <!--            <div class="link-icon"><i class="icon-plus"></i></div>-->
+            <!--         </a>-->
+
+            <!--      </div>-->
+         <!-- 		</div>  <!-- item end -->-->
+
+         <!--   </div> <!-- portfolio-wrapper end -->-->
+
+         <!--</div> <!-- twelve columns end -->-->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+       <!--  <div id="modal-01" class="popup-modal mfp-hide">-->
+
+		     <!-- <img class="scale-with-grid" src="img/portfolio/modals/m-raleigh.jpg" alt="DTR" />-->
+
+		     <!-- <div class="description-box">-->
+			    <!--  <h4>Downtown Raleigh Guide Cup</h4>-->
+			    <!--  <p>The DTR-Guide is a simple app I build as a teaching tool.-->
+			    <!--  It was created with NodeJS, Leaflet, and Bootstrap and deployed on Heroku.</p>-->
+       <!--        <span class="categories"><i class="fa fa-tag"></i>Web development</span>-->
+		     <!-- </div>-->
+
+       <!--     <div class="link-box">-->
+       <!--        <a href="http://raleigh-guide.herokuapp.com/" target="_blank">Go to the app!</a>-->
+		     <!--    <a class="popup-modal-dismiss">Close</a>-->
+       <!--     </div>-->
+
+	      <!--</div><!-- modal-01 End -->-->
+
+       <!--  <div id="modal-02" class="popup-modal mfp-hide">-->
+
+		     <!-- <img class="scale-with-grid" src="img/portfolio/modals/m-barbershop.jpeg" alt="" />-->
+
+		     <!-- <div class="description-box">-->
+			    <!--  <h4>Englewood Barbershop</h4>-->
+			    <!--  <p>Building out a website for Englewood Barbershop in Rocky Mount, NC. Work in progress.</p>-->
+       <!--        <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>-->
+		     <!-- </div>-->
+
+       <!--     <div class="link-box">-->
+       <!--        <a href="http://www.englewoodbarbershop.com" target="_blank">Details</a>-->
+		     <!--    <a class="popup-modal-dismiss">Close</a>-->
+       <!--     </div>-->
+
+	      <!--</div><!-- modal-02 End -->-->
+
+       <!--  <div id="modal-03" class="popup-modal mfp-hide">-->
+
+		     <!-- <img class="scale-with-grid" src="img/portfolio/modals/m-pro.jpg" alt="" />-->
+
+		     <!-- <div class="description-box">-->
+			    <!--  <h4>GIS Portfolio</h4>-->
+			    <!--  <p>I graduated from NCSU recently with a Master's degree in Geospatial Info Science and Technology.-->
+			    <!--  Here's my portfolio, highlighting some of my skills and experiences.</p>-->
+       <!--        <span class="categories"><i class="fa fa-tag"></i>Branding</span>-->
+		     <!-- </div>-->
+
+       <!--     <div class="link-box">-->
+       <!--        <a href="https://sites.google.com/a/ncsu.edu/justin-bridwell/home" target="_blank">Go to MGIST Portfolio</a>-->
+		     <!--    <a class="popup-modal-dismiss">Close</a>-->
+       <!--     </div>-->
+
+	      <!--</div><!-- modal-03 End -->-->
+
+       <!--  <div id="modal-04" class="popup-modal mfp-hide">-->
+
+		     <!-- <img class="scale-with-grid" src="img/portfolio/modals/m-ghost.jpg" alt="" />-->
+
+		     <!-- <div class="description-box">-->
+			    <!--  <h4>Nythrwyrld Paranormal Blog</h4>-->
+			    <!--  <p>This is an enhanced image of a possible apparition; taken by myself at Fort Bragg, NC -->
+			    <!--  around 2009. Checkout our facebook page for details.</p>-->
+       <!--        <span class="categories"><i class="fa fa-tag"></i>Ghost</span>-->
+		     <!-- </div>-->
+
+       <!--     <div class="link-box">-->
+       <!--        <a href="https://www.facebook.com/nythrwyrld/">Details</a>-->
+		     <!--    <a class="popup-modal-dismiss">Close</a>-->
+       <!--     </div>-->
+
+	      <!--</div><!-- modal-04 End -->-->
+
+        <!-- <div id="modal-05" class="popup-modal mfp-hide">-->
+
+		      <!--<img class="scale-with-grid" src="img/portfolio/modals/m-farmerboy.jpg" alt="" />-->
+
+		      <!--<div class="description-box">-->
+			     <!-- <h4>Farmer Boy</h4>-->
+			     <!-- <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--       <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
+		      <!--</div>-->
+
+        <!--    <div class="link-box">-->
+        <!--       <a href="http://www.behance.net">Details</a>-->
+		      <!--   <a class="popup-modal-dismiss">Close</a>-->
+        <!--    </div>-->
+
+	      <!--</div>--><!-- modal-05 End -->
+
+       <!--  <div id="modal-06" class="popup-modal mfp-hide">-->
+
+		     <!-- <img class="scale-with-grid" src="img/portfolio/modals/m-girl.jpg" alt="" />-->
+
+		     <!-- <div class="description-box">-->
+			    <!--  <h4>Girl</h4>-->
+			    <!--  <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+       <!--        <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
+		     <!-- </div>-->
+
+       <!--     <div class="link-box">-->
+       <!--        <a href="http://www.behance.net">Details</a>-->
+		     <!--    <a class="popup-modal-dismiss">Close</a>-->
+       <!--     </div>-->
+
+	      <!--</div><!-- modal-06 End -->
+
+       <!--  <div id="modal-07" class="popup-modal mfp-hide">-->
+
+		     <!-- <img class="scale-with-grid" src="img/portfolio/modals/m-origami.jpg" alt="" />-->
+
+		     <!-- <div class="description-box">-->
+			    <!--  <h4>Origami</h4>-->
+			    <!--  <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+       <!--        <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>-->
+		     <!-- </div>-->
+
+       <!--     <div class="link-box">-->
+       <!--        <a href="http://www.behance.net">Details</a>-->
+		     <!--    <a class="popup-modal-dismiss">Close</a>-->
+       <!--     </div>-->
+
+	      <!--</div><!-- modal-07 End -->
+
+       <!--  <div id="modal-08" class="popup-modal mfp-hide">-->
+
+		     <!-- <img class="scale-with-grid" src="img/portfolio/modals/m-retrocam.jpg" alt="" />-->
+
+		     <!-- <div class="description-box">-->
+			    <!--  <h4>Retrocam</h4>-->
+			    <!--  <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+       <!--        <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>-->
+		     <!-- </div>-->
+
+       <!--     <div class="link-box">-->
+       <!--        <a href="http://www.behance.net">Details</a>-->
+		     <!--    <a class="popup-modal-dismiss">Close</a>-->
+       <!--     </div>-->
+
+	      <!--</div><!-- modal-01 End -->
+
+
+   <!--   </div> <!-- row End -->-->
+
+   <!--</section> <!-- Portfolio Section End-->-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <!--<section id="call-to-action">-->
+
+   <!--   <div class="row">-->
+
+   <!--      <div class="two columns header-col">-->
+
+   <!--         <h1><span>Get Hosting.</span></h1>-->
+
+   <!--      </div>-->
+
+   <!--      <div class="seven columns">-->
+
+   <!--         <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>-->
+   <!--         <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.-->
+			<!--		Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>. -->
+					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
+
+   <!--      </div>-->
+
+   <!--      <div class="three columns action">-->
+
+   <!--         <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" class="button">Sign Up Now</a>-->
+
+   <!--      </div>-->
+
+   <!--   </div>-->
+
+   <!--</section> <!-- Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>"A dependable leader with a passion for justice! He's the right man for the job!"
+                           </p>
+                           <cite>Kathy</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>"Scott's not just a good lawyer; he's a good father, friend, and neighbor too."
+                           </p>
+                           <cite>Tom</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Volunteer! Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">Thanks for visiting my page. If you'd like to
+                  volunteer or contact the campaign, just fill out the form below. Thanks for your support!
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form method="POST" action="https://formspree.io/ScottMiles4CW@gmail.com" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="name">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="_replyto">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject </label>
+						   <input type="text" value="" size="35" id="contactSubject" name="_subject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="message"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submitnew" type="submit">Submit</button>
+                     <!--<input class=" submit btn btn-primary" type="submit" value="Submit">-->
+                     <!--<span id="image-loader">-->
+                     <!--   <img alt="" src="img/loader.gif">-->
+                     <!--</span>-->
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Address and Phone</h4>
+					   <p class="address">
+						   Scott Miles 4 CW<br>
+						   XXXX Rd. <br>
+						   Richmond, VA 22901 US<br>
+						   <span>804-307-6628</span>
+					   </p>
+
+				   </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+               <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+               <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+               <!--<li><a href="https://www.skype.com/en/"><i class="fa fa-skype"></i></a></li>-->
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2018 JB93</li>
+               <!--<li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   -->
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
 </html>
-
-<!-- This page was generated by ComingSoonPage.com | Learn more: http://www.comingsoonpage.com -->
-
-
-<!--<!doctype html>-->
-<!--<html lang="en" ng-app>-->
-<!--  <head>-->
-<!--    <title>Chat Example</title>-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <link rel="stylesheet" href="/css/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">-->
-<!--    <style>-->
-<!--      body {-->
-<!--        padding-top: 60px;-->
-<!--      }-->
-<!--    </style>-->
-<!--    <script>-->
-<!--      function ChatController($scope) {-->
-<!--        var socket = io.connect();-->
-
-<!--        $scope.messages = [];-->
-<!--        $scope.roster = [];-->
-<!--        $scope.name = '';-->
-<!--        $scope.text = '';-->
-
-<!--        socket.on('connect', function () {-->
-<!--          $scope.setName();-->
-<!--        });-->
-
-<!--        socket.on('message', function (msg) {-->
-<!--          $scope.messages.push(msg);-->
-<!--          $scope.$apply();-->
-<!--        });-->
-
-<!--        socket.on('roster', function (names) {-->
-<!--          $scope.roster = names;-->
-<!--          $scope.$apply();-->
-<!--        });-->
-
-<!--        $scope.send = function send() {-->
-<!--          console.log('Sending message:', $scope.text);-->
-<!--          socket.emit('message', $scope.text);-->
-<!--          $scope.text = '';-->
-<!--        };-->
-
-<!--        $scope.setName = function setName() {-->
-<!--          socket.emit('identify', $scope.name);-->
-<!--        };-->
-<!--      }-->
-<!--    </script>-->
-<!--  </head>-->
-<!--  <body>-->
-<!--    <div class="container" ng-controller="ChatController">-->
-<!--      <div class="navbar navbar-fixed-top navbar-inverse">-->
-<!--        <div class="navbar-inner">-->
-<!--          <div class="pull-right">-->
-<!--            <a href="https://c9.io" class="brand">Cloud9 IDE</a>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="page-header">-->
-<!--        <h1>Chat Example</h1>-->
-<!--      </div>-->
-<!--      <div class="row">-->
-<!--        <div class="span3">-->
-<!--          <ul class="nav nav-list well">-->
-<!--            <li class="nav-header">Local Users</li>-->
-<!--            <li ng-repeat="user in roster" ng-bind="user">-->
-<!--            </li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="span9">-->
-<!--          <table class="table table-striped table-bordered">-->
-<!--            <thead>-->
-<!--              <tr>-->
-<!--                <th class="span2">Name</th>-->
-<!--                <th class="span7">Text</th>-->
-<!--              </tr>-->
-<!--            </thead>-->
-<!--            <tbody>-->
-<!--              <tr ng-repeat="msg in messages">-->
-<!--                <td class="span2" ng-bind="msg.name"></td>-->
-<!--                <td class="span7" ng-bind="msg.text"></td>-->
-<!--              </tr>-->
-<!--            </tbody>-->
-<!--          </table>-->
-<!--          <div class="row controls">-->
-<!--            <form ng-submit="send()">-->
-<!--              <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name"></div>-->
-<!--              <div class="input-append span7">-->
-<!--                <input type="text" class="span6" ng-model="text" placeholder="Message">-->
-<!--                <input type="submit" class="span1 btn btn-primary" value="Send" ng-disabled="!text">-->
-<!--              </div>-->
-<!--            </form>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <script src="/socket.io/socket.io.js"></script>-->
-<!--    <script src="/js/jquery.min.js"></script>-->
-<!--    <script src="/js/bootstrap.min.js"></script>-->
-<!--    <script src="/js/angular.min.js"></script>-->
-<!--  </body>-->
-<!--</html>-->
